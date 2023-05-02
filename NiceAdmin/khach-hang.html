@@ -352,74 +352,6 @@
     <section class="section dashboard">
       <div class="row">
 
-        <div class="card col-12 ">
-
-          <div class="view text-bg-light pt-4 m-0">
-            <form id="frmUser">
-
-              <div class="row mb-3 align-items-center">
-                <div class="col-md-1 text-end p-0">
-                  <label for="phone" class="form-label">Từ khóa:</label>
-                </div>
-                <div class="col-md-3">
-                  <input type="text" class="form-control" id="tukhoa">
-                </div>
-
-                <div class="col-md-1 text-end">
-                  <label for="mobile" class="form-label">Ngày Tạo:</label>
-                </div>
-                <div class="col-md-3">
-                  <input type="text" class="form-control" id="ngaytao">
-                </div>
-
-                <div class="col-md-1 text-end">
-                  <label for="home" class="form-label">Loại TS:</label>
-                </div>
-                <div class="col-md-3">
-                  <input type="text" class="form-control" id="loaits">
-                </div>
-              </div>
-
-
-              <div class="row mb-3 align-items-center">
-                <div class="col-md-1 text-end p-0">
-                  <label for="phone" class="form-label">Giai đoạn:</label>
-                </div>
-                <div class="col-md-3">
-                  <select class="form-select" aria-label="Default select example">
-
-                    <option selected value="1">Hợp đồng</option>
-                    <option value="2">Trình ký</option>
-                    <option value="3">Cấp số</option>
-                    <option value="4">Lưu trữ</option>
-                    <option value="5">Kết thúc</option>
-                  </select>
-                </div>
-
-                <div class="col-md-1 text-end">
-                  <label for="mobile" class="form-label">Loại việc:</label>
-                </div>
-                <div class="col-md-3">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">Hợp đồng</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-
-              </div>
-
-              <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-2">
-                <button class="btn btn-success me-md-2" type="button"><i class="bi bi-search-heart"></i>&nbsp;&nbsp;Tìm
-                  kiếm</button>
-
-              </div>
-
-
-            </form>
-          </div>
-
         </div>
 
         <!-- Left side columns -->
@@ -443,13 +375,11 @@
                 <thead>
                   <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Số HD</th>
-                    <th scope="col">Loại Việc</th>
-                    <th scope="col">Loại tài sản</th>
-                    <th scope="col">Tên Hợp đồng</th>
+                    <th scope="col">Tên khách hàng</th>
+                    <th scope="col">SĐTc</th>
+                    <th scope="col">Email</th>
                     <th scope="col">Ngày tạo</th>
-                    <th scope="col">Giai đoạn</th>
-                    <th scope="col">Trạng thái</th>
+                    <th scope="col">Người tạo</th>
                     <th scope="col">Thao tác</th>
 
                   </tr>
@@ -457,76 +387,19 @@
                 <tbody>
                   <tr>
                     <th scope="row"><a href="#">457</a></th>
-                    <th scope="row"><a href="#">7800</a></th>
+                    <td scope="row">7800</td>
                     <td>Biên dịch </td>
                     <td>Xe máy </td>
                     <td>Biên dịch tiếng trung </td>
 
                     <td>22/12/2022</td>
-                    <td><span class="badge bg-secondary">Lưu trữ</span></td>
-                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                 
                     <td scope="row" class=" align-center"><a href="#"><i
                           class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<a href="#"><i class="bi bi-trash"></i></a>
                     </td>
                   </tr>
-                  <tr>
-                    <th scope="row"><a href="#">456</a></th>
-                    <th scope="row"><a href="#">7800</a></th>
-                    <td>Biên dịch </td>
-                    <td>Xe máy </td>
-                    <td>Biên dịch tiếng trung </td>
-
-                    <td>22/12/2022</td>
-                    <td><span class="badge bg-primary">Kết thúc</span></td>
-                    <td><span class="badge bg-primary">Đang hợp đồng</span></td>
-                    <td scope="row" class=" align-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<a href="#"><i class="bi bi-trash"></i></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><a href="#">455</a></th>
-                    <th scope="row"><a href="#">7801</a></th>
-                    <td>Biên dịch </td>
-                    <td>Xe máy </td>
-                    <td>Biên dịch tiếng trung </td>
-
-                    <td>22/12/2022</td>
-                    <td><span class="badge bg-info">Cấp số</span></td>
-                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
-                    <td scope="row" class=" align-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<a href="#"><i class="bi bi-trash"></i></a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row"><a href="#">457</a></th>
-                    <th scope="row"><a href="#">7800</a></th>
-                    <td>Biên dịch </td>
-                    <td>Xe máy </td>
-                    <td>Biên dịch tiếng trung </td>
-
-                    <td>22/12/2022</td>
-                    <td><span class="badge bg-danger">Hợp đồng</span></td>
-                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
-                    <td scope="row" class=" align-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<a href="#"><i class="bi bi-trash"></i></a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row"><a href="#">457</a></th>
-                    <th scope="row"><a href="#">7800</a></th>
-                    <td>Biên dịch </td>
-                    <td>Xe máy </td>
-                    <td>Biên dịch tiếng trung </td>
-
-                    <td>22/12/2022</td>
-                    <td><span class="badge bg-success">Trình kí</span></td>
-                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
-                    <td scope="row" class=" align-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<a href="#"><i class="bi bi-trash"></i></a>
-                    </td>
-                  </tr>
+                
+                 
 
                 </tbody>
               </table>
