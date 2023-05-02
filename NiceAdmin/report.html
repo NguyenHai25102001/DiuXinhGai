@@ -340,33 +340,88 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>DANH SÁCH KHÁCH HÀNG</h1>
+      <h1>DANH SÁCH HỢP ĐỒNG</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
+          <li class="breadcrumb-item"><a href="index.html">Hợp đồng</a></li>
+         
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <section class="section dashboard">
-      <div class="row">
-        <div class="col-12 ">
+      <div class="">
+
+        <div class="card col-12 ">
 
           <div class="view text-bg-light pt-4">
             <form id="frmUser">
 
+              <div class="row mb-3 align-items-center">
+                <div class="col-md-1 text-end p-0">
+                  <label for="phone" class="form-label">Từ khóa:</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" class="form-control" id="tukhoa">
+                </div>
+
+                <div class="col-md-1 text-end">
+                  <label for="mobile" class="form-label">Ngày Tạo:</label>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" class="form-control" id="ngaytao">
+                </div>
+
+                <div class="col-md-1 text-end ">
+                  <label for="home" class="form-label">Loại TS:</label>
+                </div>
+                <div class="col-md-2 ">
+                  <input type="text" class="form-control" id="loaits">
+                </div>
+              </div>
 
 
+              <div class="row mb-3 align-items-center">
+                <div class="col-md-1 text-end p-0">
+                  <label for="phone" class="form-label">Giai đoạn:</label>
+                </div>
+                <div class="col-md-3">
+                  <select class="form-select" aria-label="Default select example">
 
+                    <option selected value="1">Hợp đồng</option>
+                    <option value="2">Trình ký</option>
+                    <option value="3">Cấp số</option>
+                    <option value="4">Lưu trữ</option>
+                    <option value="5">Kết thúc</option>
+                  </select>
+                </div>
+
+                <div class="col-md-1 text-end">
+                  <label for="mobile" class="form-label">Loại việc:</label>
+                </div>
+                <div class="col-md-3">
+                  <select class="form-select" aria-label="Default select example">
+                  
+                    <option selected value="1">Công chứng</option>
+                    <option value="2">Chứng thực chứ ký</option>
+                    <option value="3">Biên dịch</option>
+                  </select>
+                </div>
+
+                <div class="col-md-1 text-end p-0">
+                  <label for="phone" class="form-label">Trạng thái TT:</label>
+                </div>
+                <div class="col-md-2">
+                  <input type="text" class="form-control" id="trangthai">
+                </div>
+
+
+              </div>
 
               <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-2">
-
-                <div class="col-md-3">
-                  <input type="text" class="form-control" id="loaits" placeholder="Từ khóa">
-                </div>
-                <button class="btn btn-success me-md-2 " type="button"><i class="bi bi-search-heart"></i>&nbsp;&nbsp;Tìm
+                <button class="btn btn-success me-md-2" type="button"><i class="bi bi-search-heart"></i>&nbsp;&nbsp;Tìm
                   kiếm</button>
+
               </div>
 
 
@@ -375,144 +430,119 @@
 
         </div>
 
-      </div>
-
-      <!-- Left side columns -->
-      <!-- Recent Sales -->
-      <div class="col-12">
-        <div class="card recent-sales overflow-auto">
+        <!-- Left side columns -->
+        <!-- Recent Sales -->
+        <div class="col-12">
+          <div class="card recent-sales overflow-auto">
 
 
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2">
-            <a class="icon" href="Add-custormer.html" ">
-                <button class=" btn btn-success me-md-2" type="button"><i class="bi bi-patch-plus"></i>&nbsp;&nbsp;Thêm
-              mới</button>
-            </a>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2">
+              <a class="icon" href="Add-Contract.html">
+                <button class="btn btn-success me-md-2" type="button"><i class="bi bi-patch-plus"></i>&nbsp;&nbsp;Thêm
+                  mới</button>
+              </a>
 
-          </div>
+            </div>
 
-          <div class="card-body">
-            <h5 class="card-title">Danh sách khách hàng</span></h5>
+            <div class="card-body">
+              <h5 class="card-title">Danh sách hợp đồng</span></h5>
 
-            <table class="table table-borderless datatable">
-              <thead>
-                <tr>
-                  <th scope="col">ID</th>
-                  <th scope="col">Tên khách hàng</th>
-                  <th scope="col">SĐT</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Ngày tạo</th>
-                  <th scope="col">Người tạo</th>
-                  <th scope="col">Thao tác</th>
+              <table class="table table-borderless datatable">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Số HD</th>
+                    <th scope="col">Loại Việc</th>
+                    <th scope="col">Loại tài sản</th>
+                    <th scope="col">Tên Hợp đồng</th>
+                    <th scope="col">Ngày tạo</th>
+                    <th scope="col">Giai đoạn</th>
+                    <th scope="col">Trạng thái</th>
+                    <th scope="col">Thao tác</th>
 
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"><a href="#">1</a></th>
-                  <td scope="row">Nguyễn Văn An</td>
-                  <td>0354583367</td>
-                  <td>nva@gmail.com</td>
-                  <td>22/04/2023</td>
-                  <td>Nguyễn Văn Hải</td>
-                   <td scope="row" class=" align-center text-center"><a href="#"><i
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><a href="#">457</a></th>
+                    <th scope="row"><a href="#">7800</a></th>
+                    <td>Biên dịch </td>
+                    <td>Xe máy </td>
+                    <td>Biên dịch tiếng trung </td>
+
+                    <td>22/12/2022</td>
+                    <td><span class="badge bg-secondary">Lưu trữ</span></td>
+                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                     <td scope="row" class=" align-center text-center"><a href="#"><i
                           class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
                     </td>
-                </tr>
+                  </tr>
+                  <tr>
+                    <th scope="row"><a href="#">456</a></th>
+                    <th scope="row"><a href="#">7800</a></th>
+                    <td>Biên dịch </td>
+                    <td>Xe máy </td>
+                    <td>Biên dịch tiếng trung </td>
 
-                <tr>
-                  <th scope="row"><a href="#">2</a></th>
-                  <td scope="row">Nguyễn Thị Ánh</td>
-                  <td>0354583367</td>
-                  <td>nva@gmail.com</td>
-                  <td>17/04/2023</td>
-                  <td>Nguyễn Văn Hải</td>
-                   <td scope="row" class=" align-center text-center"><a href="#"><i
+                    <td>22/12/2022</td>
+                    <td><span class="badge bg-primary">Kết thúc</span></td>
+                    <td><span class="badge bg-primary">Đang hợp đồng</span></td>
+                     <td scope="row" class=" align-center text-center"><a href="#"><i
                           class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
                     </td>
-                </tr>
+                  </tr>
+                  <tr>
+                    <th scope="row"><a href="#">455</a></th>
+                    <th scope="row"><a href="#">7801</a></th>
+                    <td>Biên dịch </td>
+                    <td>Xe máy </td>
+                    <td>Biên dịch tiếng trung </td>
 
-                <tr>
-                  <th scope="row"><a href="#">3</a></th>
-                  <td scope="row">Hoàng Quang Huy</td>
-                  <td>0354583367</td>
-                  <td>hqh@gmail.com</td>
-                  <td>12/06/2023</td>
-                  <td>Nguyễn Văn A</td>
-                   <td scope="row" class=" align-center text-center"><a href="#"><i
+                    <td>22/12/2022</td>
+                    <td><span class="badge bg-info">Cấp số</span></td>
+                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                     <td scope="row" class=" align-center text-center"><a href="#"><i
                           class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
                     </td>
-                </tr>
+                  </tr>
 
-                <tr>
-                  <th scope="row"><a href="#">4</a></th>
-                  <td scope="row">Nguyễn Văn Hậu</td>
-                  <td>0354583367</td>
-                  <td>nvh@gmail.com</td>
-                  <td>22/04/2023</td>
-                  <td>Nguyễn Văn Hải</td>
-                   <td scope="row" class=" align-center text-center"><a href="#"><i
+                  <tr>
+                    <th scope="row"><a href="#">457</a></th>
+                    <th scope="row"><a href="#">7800</a></th>
+                    <td>Biên dịch </td>
+                    <td>Xe máy </td>
+                    <td>Biên dịch tiếng trung </td>
+
+                    <td>22/12/2022</td>
+                    <td><span class="badge bg-danger">Hợp đồng</span></td>
+                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                     <td scope="row" class=" align-center text-center"><a href="#"><i
                           class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
                     </td>
-                </tr>
+                  </tr>
 
-                <tr>
-                  <th scope="row"><a href="#">5</a></th>
-                  <td scope="row">Chu Văn An</td>
-                  <td>0354583367</td>
-                  <td>nva@gmail.com</td>
-                  <td>22/04/2023</td>
-                  <td>Nguyễn Văn Hải</td>
-                   <td scope="row" class=" align-center text-center"><a href="#"><i
+                  <tr>
+                    <th scope="row"><a href="#">457</a></th>
+                    <th scope="row"><a href="#">7800</a></th>
+                    <td>Biên dịch </td>
+                    <td>Xe máy </td>
+                    <td>Biên dịch tiếng trung </td>
+
+                    <td>22/12/2022</td>
+                    <td><span class="badge bg-success">Trình kí</span></td>
+                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
+                     <td scope="row" class=" align-center text-center"><a href="#"><i
                           class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
                     </td>
-                </tr>
+                  </tr>
 
+                </tbody>
+              </table>
 
-
-              </tbody>
-            </table>
-            <nav aria-label="Page navigation example">
-              <ul class="pagination justify-content-end">
-                <li class="page-item disabled">
-                  <a class="page-link">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
-              </ul>
-            </nav>
-
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Bạn có muốn xóa khách hàng có ID: 1 Nguyễn Văn A
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Oke</button>
-                  </div>
-                </div>
-              </div>
             </div>
 
           </div>
-
-        </div>
-      </div><!-- End Recent Sales -->
-
-
+        </div><!-- End Recent Sales -->
 
       </div>
     </section>

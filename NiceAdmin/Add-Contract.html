@@ -340,180 +340,133 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>DANH SÁCH KHÁCH HÀNG</h1>
+      <h1>TẠO HỢP ĐỒNG</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
+          <li class="breadcrumb-item"><a href="index.html">Hợp đồng</a></li>
+          <li class="breadcrumb-item active">Tạo hợp đồng</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
     <section class="section dashboard">
-      <div class="row">
-        <div class="col-12 ">
-
-          <div class="view text-bg-light pt-4">
-            <form id="frmUser">
+      <div class="">
 
 
+        <!-- Left side columns -->
+        <!-- Recent Sales -->
+        <div class="col-12">
+          <div class="row">
 
 
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-4 position-relative mt-5">
+                <label for="validationTooltip01" class="form-label">Loại việc</label>
+                <select class="form-select" aria-label="Default select example">
+
+                  <option selected value="1">Công chứng</option>
+                  <option value="2">Chứng thực chữ ký</option>
+                  <option value="3">Biên dịch</option>
+
+                </select>
+
+              </div>
+              <div class="col-md-4 position-relative mt-5">
+
+                <label for="validationTooltip01" class="form-label">Loại việc</label>
+                <select class="form-select" aria-label="Default select example">
+
+                  <option selected value="1">Bất động sản</option>
+                  <option value="2">Xe máy</option>
+                  <option value="3">Ô tô</option>
+
+                </select>
+
+
+              </div>
+
+              <div class="col-md-4 position-relative mt-5">
+                <label for="validationTooltip01" class="form-label">Tên hợp đồng</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+
+              <div class="col-md-4 position-relative mt-5">
+                <label for="validationTooltip01" class="form-label">Khách hàng</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+
+
+              <div class="col-md-4 position-relative mt-5">
+                <label for="validationTooltip01" class="form-label">SĐT</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+
+
+              <div class="col-md-4 position-relative mt-5">
+                <label for="validationTooltip01" class="form-label">Phí</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+
+
+              <div class="col-md-4 position-relative mt-5">
+                <label for="validationTooltip01" class="form-label">Chuyên viên</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+
+
+              <div class="col-md-4 position-relative mt-5">
+                <label for="validationTooltip01" class="form-label">Người kí</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+
+
+              <div class="col-md-4 position-relative mt-5">
+                <label for="validationTooltip01" class="form-label">Đối tác</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                <div class="valid-tooltip">
+                  Looks good!
+                </div>
+              </div>
+
+
+
+
+
+
+              <div class="col-md-10 position-relative">
+                <label for="validationTooltip04" class="form-label">Ghi chú</label>
+                <textarea name="" id="" cols="30" rows="4" class="form-control"></textarea>
+                <div class="invalid-tooltip">
+                  Please select a valid state.
+                </div>
+              </div>
 
               <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-2">
-
-                <div class="col-md-3">
-                  <input type="text" class="form-control" id="loaits" placeholder="Từ khóa">
-                </div>
-                <button class="btn btn-success me-md-2 " type="button"><i class="bi bi-search-heart"></i>&nbsp;&nbsp;Tìm
-                  kiếm</button>
+                <button class="btn btn-success me-md-2" type="button"><i
+                    class="bi bi-clipboard2-check"></i>&nbsp;&nbsp;Thêm mới</button>
               </div>
-
-
             </form>
-          </div>
 
+          </div><!-- End Recent Sales -->
         </div>
-
-      </div>
-
-      <!-- Left side columns -->
-      <!-- Recent Sales -->
-      <div class="col-12">
-        <div class="card recent-sales overflow-auto">
-
-
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2">
-            <a class="icon" href="Add-custormer.html" ">
-                <button class=" btn btn-success me-md-2" type="button"><i class="bi bi-patch-plus"></i>&nbsp;&nbsp;Thêm
-              mới</button>
-            </a>
-
-          </div>
-
-          <div class="card-body">
-            <h5 class="card-title">Danh sách khách hàng</span></h5>
-
-            <table class="table table-borderless datatable">
-              <thead>
-                <tr>
-                  <th scope="col">ID</th>
-                  <th scope="col">Tên khách hàng</th>
-                  <th scope="col">SĐT</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Ngày tạo</th>
-                  <th scope="col">Người tạo</th>
-                  <th scope="col">Thao tác</th>
-
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"><a href="#">1</a></th>
-                  <td scope="row">Nguyễn Văn An</td>
-                  <td>0354583367</td>
-                  <td>nva@gmail.com</td>
-                  <td>22/04/2023</td>
-                  <td>Nguyễn Văn Hải</td>
-                   <td scope="row" class=" align-center text-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
-                    </td>
-                </tr>
-
-                <tr>
-                  <th scope="row"><a href="#">2</a></th>
-                  <td scope="row">Nguyễn Thị Ánh</td>
-                  <td>0354583367</td>
-                  <td>nva@gmail.com</td>
-                  <td>17/04/2023</td>
-                  <td>Nguyễn Văn Hải</td>
-                   <td scope="row" class=" align-center text-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
-                    </td>
-                </tr>
-
-                <tr>
-                  <th scope="row"><a href="#">3</a></th>
-                  <td scope="row">Hoàng Quang Huy</td>
-                  <td>0354583367</td>
-                  <td>hqh@gmail.com</td>
-                  <td>12/06/2023</td>
-                  <td>Nguyễn Văn A</td>
-                   <td scope="row" class=" align-center text-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
-                    </td>
-                </tr>
-
-                <tr>
-                  <th scope="row"><a href="#">4</a></th>
-                  <td scope="row">Nguyễn Văn Hậu</td>
-                  <td>0354583367</td>
-                  <td>nvh@gmail.com</td>
-                  <td>22/04/2023</td>
-                  <td>Nguyễn Văn Hải</td>
-                   <td scope="row" class=" align-center text-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
-                    </td>
-                </tr>
-
-                <tr>
-                  <th scope="row"><a href="#">5</a></th>
-                  <td scope="row">Chu Văn An</td>
-                  <td>0354583367</td>
-                  <td>nva@gmail.com</td>
-                  <td>22/04/2023</td>
-                  <td>Nguyễn Văn Hải</td>
-                   <td scope="row" class=" align-center text-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
-                    </td>
-                </tr>
-
-
-
-              </tbody>
-            </table>
-            <nav aria-label="Page navigation example">
-              <ul class="pagination justify-content-end">
-                <li class="page-item disabled">
-                  <a class="page-link">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
-              </ul>
-            </nav>
-
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Bạn có muốn xóa khách hàng có ID: 1 Nguyễn Văn A
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Oke</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div><!-- End Recent Sales -->
-
-
-
       </div>
     </section>
 
