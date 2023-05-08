@@ -344,7 +344,7 @@
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Hợp đồng</a></li>
-         
+
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -401,7 +401,7 @@
                 </div>
                 <div class="col-md-3">
                   <select class="form-select" aria-label="Default select example">
-                  
+
                     <option selected value="1">Công chứng</option>
                     <option value="2">Chứng thực chứ ký</option>
                     <option value="3">Biên dịch</option>
@@ -447,94 +447,141 @@
             <div class="card-body">
               <h5 class="card-title">Danh sách hợp đồng</span></h5>
 
-              <table class="table table-borderless datatable">
+              <table class="table table-borderless ">
                 <thead>
                   <tr>
+                    <th scope="col"><input type="checkbox"></th>
+                    <th scope="col"></th>
                     <th scope="col">ID</th>
-                    <th scope="col">Số HD</th>
-                    <th scope="col">Loại Việc</th>
-                    <th scope="col">Loại tài sản</th>
-                    <th scope="col">Tên Hợp đồng</th>
-                    <th scope="col">Ngày tạo</th>
-                    <th scope="col">Giai đoạn</th>
-                    <th scope="col">Trạng thái</th>
-                    <th scope="col">Thao tác</th>
+                    <th scope="col" class="datatable">Số HD</th>
+                    <th scope="col">Tên hợp đồng</th>
+                    <th scope="col">Phí CC(TT257)(01)</th>
+                    <th scope="col">Thù lao CC(02)</th>
+                    <th scope="col">Thù lao KN</th>
+                    <th scope="col">Thu khác</th>
+                    <th scope="col" style="color: #44BA8F;">Tổng thu(03)</th>
+
 
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row"><a href="#">457</a></th>
-                    <th scope="row"><a href="#">7800</a></th>
-                    <td>Biên dịch </td>
-                    <td>Xe máy </td>
-                    <td>Biên dịch tiếng trung </td>
+                    <td><input type="checkbox"></td>
+                    <td><i class="bi bi-file-earmark-medical p-1 " style="background-color:
+                      #44BA8F ; color: white;"></i></td>
+                    <td scope="row">1</td>
+                    <td scope="row"><a href="#"></a></td>
+                    <td style="color: #44BA8F;">HDU ô tô </td>
+                    <td><input type="text" value="1.000.000" style="text-align: right;width: 100px;"></td>
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
 
-                    <td>22/12/2022</td>
-                    <td><span class="badge bg-secondary">Lưu trữ</span></td>
-                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
-                     <td scope="row" class=" align-center text-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><a href="#">456</a></th>
-                    <th scope="row"><a href="#">7800</a></th>
-                    <td>Biên dịch </td>
-                    <td>Xe máy </td>
-                    <td>Biên dịch tiếng trung </td>
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
 
-                    <td>22/12/2022</td>
-                    <td><span class="badge bg-primary">Kết thúc</span></td>
-                    <td><span class="badge bg-primary">Đang hợp đồng</span></td>
-                     <td scope="row" class=" align-center text-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row"><a href="#">455</a></th>
-                    <th scope="row"><a href="#">7801</a></th>
-                    <td>Biên dịch </td>
-                    <td>Xe máy </td>
-                    <td>Biên dịch tiếng trung </td>
-
-                    <td>22/12/2022</td>
-                    <td><span class="badge bg-info">Cấp số</span></td>
-                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
-                     <td scope="row" class=" align-center text-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
-                    </td>
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+                    <td scope="row" class=" align-center text-center" style="color: #44BA8F;">1.000.000</td>
                   </tr>
 
-                  <tr>
-                    <th scope="row"><a href="#">457</a></th>
-                    <th scope="row"><a href="#">7800</a></th>
-                    <td>Biên dịch </td>
-                    <td>Xe máy </td>
-                    <td>Biên dịch tiếng trung </td>
 
-                    <td>22/12/2022</td>
-                    <td><span class="badge bg-danger">Hợp đồng</span></td>
-                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
-                     <td scope="row" class=" align-center text-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
-                    </td>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><i class="bi bi-file-earmark-medical p-1 " style="background-color:
+                      #44BA8F ; color: white;"></i></td>
+                    <td scope="row">2</td>
+                    <td scope="row"><a href="#"></a></td>
+                    <td style="color: #44BA8F;">HDU ô tô </td>
+                    <td><input type="text" value="1.000.000" style="text-align: right;width: 100px;"></td>
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+                    <td scope="row" class=" align-center text-center" style="color: #44BA8F;">1.000.000</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><i class="bi bi-file-earmark-medical p-1 " style="background-color:
+                      #44BA8F ; color: white;"></i></td>
+                    <td scope="row">3</td>
+                    <td scope="row"><a href="#"></a></td>
+                    <td style="color: #44BA8F;">HDU ô tô </td>
+                    <td><input type="text" value="1.000.000" style="text-align: right;width: 100px;"></td>
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+                    <td scope="row" class=" align-center text-center" style="color: #44BA8F;">1.000.000</td>
                   </tr>
 
                   <tr>
-                    <th scope="row"><a href="#">457</a></th>
-                    <th scope="row"><a href="#">7800</a></th>
-                    <td>Biên dịch </td>
-                    <td>Xe máy </td>
-                    <td>Biên dịch tiếng trung </td>
+                    <td><input type="checkbox"></td>
+                    <td><i class="bi bi-file-earmark-medical p-1 " style="background-color:
+                      #44BA8F ; color: white;"></i></td>
+                    <td scope="row">4</td>
+                    <td scope="row"><a href="#"></a></td>
+                    <td style="color: #44BA8F;">HDU ô tô </td>
+                    <td><input type="text" value="1.000.000" style="text-align: right;width: 100px;"></td>
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
 
-                    <td>22/12/2022</td>
-                    <td><span class="badge bg-success">Trình kí</span></td>
-                    <td><span class="badge bg-warning">Đang thực hiện</span></td>
-                     <td scope="row" class=" align-center text-center"><a href="#"><i
-                          class="bi bi-pencil-square "></i></a>&nbsp;&nbsp;<i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
-                    </td>
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+                    <td scope="row" class=" align-center text-center" style="color: #44BA8F;">1.000.000</td>
                   </tr>
+
+
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><i class="bi bi-file-earmark-medical p-1 " style="background-color:
+                      #44BA8F ; color: white;"></i></td>
+                    <td scope="row">5</td>
+                    <td scope="row"><a href="#"></a></td>
+                    <td style="color: #44BA8F;">HDU ô tô </td>
+                    <td><input type="text" value="1.000.000" style="text-align: right;width: 100px;"></td>
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+                    <td scope="row" class=" align-center text-center" style="color: #44BA8F;">1.000.000</td>
+                  </tr>
+
+
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><i class="bi bi-file-earmark-medical p-1 " style="background-color:
+                      #44BA8F ; color: white;"></i></td>
+                    <td scope="row">6</td>
+                    <td scope="row"><a href="#"></a></td>
+                    <td style="color: #44BA8F;">HDU ô tô </td>
+                    <td><input type="text" value="1.000.000" style="text-align: right;width: 100px;"></td>
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+                    <td scope="row" class=" align-center text-center" style="color: #44BA8F;">1.000.000</td>
+                  </tr>
+
+
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><i class="bi bi-file-earmark-medical p-1 " style="background-color:
+                      #44BA8F ; color: white;"></i></td>
+                    <td scope="row" >7</td>
+                    <td scope="row"><a href="#"></a></td>
+                    <td style="color: #44BA8F;">HDU ô tô </td>
+                    <td><input type="text" value="1.000.000" style="text-align: right;width: 100px;"></td>
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+
+                    <td><input type="text" value="0" style="text-align: right;width: 100px;"></td>
+                    <td scope="row" class=" align-center text-center" style="color: #44BA8F;">1.000.000</td>
+                  </tr>
+
+
+
 
                 </tbody>
               </table>
